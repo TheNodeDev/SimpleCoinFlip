@@ -48,7 +48,7 @@ int main()
             binaryrepresentation += "0";
 
 
-        gotoxy(0, 2);
+        gotoxy(0, 3);
         std::cout << "Streak milestones:";
 
         gotoxy(60, 9);
@@ -60,18 +60,21 @@ int main()
         if(amountofloops > 50)
             binaryrepresentation.erase(0, 1);
 
+        gotoxy(0, 2);
+        std::cout << "Format: <Streak Milestone : Amount of total loops : amout of loops since last milestone>";
+
 
         if (amountOfRecords < 10) {
-            gotoxy(0, 2 + (amountOfRecords));
-            std::cout << maxStreak << ":" << amountofloopssincelast;
+            gotoxy(0, 3 + (amountOfRecords));
+            std::cout << maxStreak << ":" << amountofloops << ":" << amountofloopssincelast;
         }
         if (amountOfRecords >= 10 && amountOfRecords < 20) {
-            gotoxy(10, 2 + (amountOfRecords - 9));
-            std::cout << maxStreak << ":" << amountofloopssincelast;
+            gotoxy(15, 3 + (amountOfRecords - 9));
+            std::cout << maxStreak << ":" << amountofloops << ":" << amountofloopssincelast;
         }
         if (amountOfRecords >= 20) {
-            gotoxy(20, 2 + (amountOfRecords - 19));
-            std::cout << maxStreak << ":" << amountofloopssincelast;
+            gotoxy(30, 3 + (amountOfRecords - 19));
+            std::cout << maxStreak << ":" << amountofloops << ":" << amountofloopssincelast;
 
         }
 
@@ -86,6 +89,7 @@ int main()
                     amountOfRecords++;
                     maxStreak = streak;
                     gotoxy(0, 0);
+                    streak = 0;
                     std::cout << "New max streak of: " << maxStreak << std::endl;
                 }
             }
@@ -105,6 +109,7 @@ int main()
                     amountOfRecords++;
                     maxStreak = streak;
                     gotoxy(0, 0);
+                    streak = 0;
                     std::cout << "New max streak of: " << maxStreak << std::endl;
                 }
             }

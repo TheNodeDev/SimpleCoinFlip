@@ -2,4 +2,5 @@
 C:\Users\A M\source\repos\CoinFlip\CoinFlip\CoinFlip.cpp(17,19): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
 C:\Users\A M\source\repos\CoinFlip\CoinFlip\CoinFlip.cpp(17,22): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
 C:\Users\A M\source\repos\CoinFlip\CoinFlip\CoinFlip.cpp(24,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  LINK : program database C:\Users\A M\source\repos\CoinFlip\Debug\CoinFlip.pdb missing; performing full link
   CoinFlip.vcxproj -> C:\Users\A M\source\repos\CoinFlip\Debug\CoinFlip.exe

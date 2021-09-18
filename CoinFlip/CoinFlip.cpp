@@ -40,7 +40,7 @@ int main()
         gotoxy(30, 0);
         std::cout << "Current streak: " << streak << "   ";
         gotoxy(60, 0);
-        std::cout << "Estimated time to next streak: " << pow(maxStreak + 1, 2) << "   ";
+        std::cout << "Estimated time to next streak: " << pow(2, maxStreak + 1) << "   ";
 
         if (isHeads)
             binaryrepresentation += "1";
